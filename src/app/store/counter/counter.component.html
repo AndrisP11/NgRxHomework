@@ -1,0 +1,8 @@
+<ng-container *ngIf="this.counter">
+    <span>Counter works!</span>
+    <div>Current Count: {{ this.counter }}</div>
+    <button (click)="increment()">Increment</button>
+    <button (click)="decrement()">Decrement</button>
+    <button (click)="reset()">Reset</button>
+</ng-container>
+<ng-container *ngIf="!this.counter">Counter doesn't work!</ng-container>
